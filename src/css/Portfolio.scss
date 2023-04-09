@@ -1,0 +1,68 @@
+.portfolio {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h4 {
+        font-family: "Josefin Sans";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.335em;
+        color: #1e1e1e;
+        text-align: center;
+      }
+      p {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #24a4ec;
+        text-align: center;
+      }
+    }
+    .projects {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        cursor: pointer;
+        .img {
+          width: 250px;
+          height: 300px;
+          background-color: transparent;
+          border: #24a4ec solid 2px;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        h6 {
+          font-family: "Josefin Sans";
+          font-style: italic;
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 26px;
+          color: #24a4ec;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

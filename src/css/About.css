@@ -1,0 +1,105 @@
+.about {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about .about-container .img-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about .about-container .img-holder img {
+  width: 350px;
+}
+.about .about-container .img-holder .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.about .about-container .img-holder .buttons .about-btn {
+  box-shadow: none !important;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 22px;
+  max-width: 130px;
+}
+.about .about-container .img-holder .buttons .about-btn.one {
+  background-color: #24a4ec;
+}
+.about .about-container .img-holder .buttons .about-btn.two {
+  border-color: #24a4ec;
+  color: #24a4ec;
+}
+.about .about-container .info-container {
+  display: flex;
+  flex-direction: column;
+}
+.about .about-container .info-container .info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 35px;
+}
+.about .about-container .info-container .info-grid .part {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 350px;
+}
+.about .about-container .info-container .info-grid .part h4 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 145%;
+  letter-spacing: 0.085em;
+  color: #24a4ec;
+}
+.about .about-container .info-container .info-grid .part p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.085em;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1052px) {
+  .about-container {
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .info-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: auto !important;
+  }
+}/*# sourceMappingURL=About.css.map */

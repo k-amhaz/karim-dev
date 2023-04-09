@@ -1,0 +1,138 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 20px;
+    left: 300px;
+    border-radius: 50%;
+    background-color: #24a4ec0a;
+    z-index: -2;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 350px;
+    left: 750px;
+    border-radius: 50%;
+    background-color: #24a4ec0a;
+    z-index: -3;
+  }
+
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .texts {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      p.hi {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: 0.135em;
+        color: #1e1e1e;
+        margin: 0;
+      }
+      h4 {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: 0.3em;
+        color: #24a4ec;
+        margin: 0;
+      }
+      p {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        color: #1e1e1e;
+        margin: 0;
+      }
+      button {
+        color: #24a4ec;
+        font-family: "Josefin Sans";
+        border-color: #24a4ec !important;
+        margin: 0;
+        max-width: 220px;
+      }
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .img-holder {
+        img {
+          width: 500px;
+        }
+      }
+      .icons {
+        display: flex;
+        justify-content: space-around;
+        img {
+          width: 25px;
+        }
+      }
+      p {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.335em;
+        color: #1e1e1e;
+        margin: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    gap: 20px;
+    .texts {
+      align-items: center;
+      text-align: center;
+      order: 2;
+    }
+    .social {
+      flex-direction: row !important;
+      .img-holder {
+        order: 2;
+        img {
+          width: 270px !important;
+        }
+      }
+      .icons {
+        flex-direction: column;
+        order: 1;
+        justify-content: space-around;
+      }
+      p {
+        order: 3;
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .home {
+    height: calc(100vh + 100px);
+  }
+}

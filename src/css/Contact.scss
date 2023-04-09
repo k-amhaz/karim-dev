@@ -1,0 +1,106 @@
+.contact {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h4 {
+        font-family: "Josefin Sans";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.335em;
+        color: #1e1e1e;
+        text-align: center;
+      }
+      p {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        color: #24a4ec;
+        text-align: center;
+      }
+    }
+    .form {
+      background-color: #24a4ec;
+      width: 500px;
+      min-height: 300px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 35px;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 400px !important;
+  }
+}
+
+/* Media query for screens 400px wide or less */
+@media (max-width: 400px) {
+  .form {
+    width: 300px !important;
+  }
+}
+
+.feedback-input {
+  color: white;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: white;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+}
+
+textarea {
+  height: 100px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Lato";
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #24a4ec;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #687b86;
+}

@@ -1,0 +1,27 @@
+.no-underline {
+  text-decoration: none !important;
+}
+
+body {
+  overflow-y: visible;
+}
+@media only screen and (max-width: 900px) {
+  body {
+    height: calc(100vh + 150px);
+    overflow-y: scroll;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.skills {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

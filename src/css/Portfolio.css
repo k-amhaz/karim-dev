@@ -1,0 +1,68 @@
+.portfolio {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.portfolio .portfolio-container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.portfolio .portfolio-container .text h4 {
+  font-family: "Josefin Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.335em;
+  color: #1e1e1e;
+  text-align: center;
+}
+.portfolio .portfolio-container .text p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #24a4ec;
+  text-align: center;
+}
+.portfolio .portfolio-container .projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.portfolio .portfolio-container .projects .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.portfolio .portfolio-container .projects .card .img {
+  width: 250px;
+  height: 300px;
+  background-color: transparent;
+  border: #24a4ec solid 2px;
+}
+.portfolio .portfolio-container .projects .card .img img {
+  height: 100%;
+  width: 100%;
+}
+.portfolio .portfolio-container .projects .card h6 {
+  font-family: "Josefin Sans";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #24a4ec;
+  text-align: center;
+}/*# sourceMappingURL=Portfolio.css.map */

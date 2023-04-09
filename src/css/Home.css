@@ -1,0 +1,136 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+  position: relative;
+  overflow: hidden;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 20px;
+  left: 300px;
+  border-radius: 50%;
+  background-color: rgba(36, 164, 236, 0.0392156863);
+  z-index: -2;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 350px;
+  left: 750px;
+  border-radius: 50%;
+  background-color: rgba(36, 164, 236, 0.0392156863);
+  z-index: -3;
+}
+.home .home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home .home-container .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.home .home-container .texts p.hi {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0.135em;
+  color: #1e1e1e;
+  margin: 0;
+}
+.home .home-container .texts h4 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 0.3em;
+  color: #24a4ec;
+  margin: 0;
+}
+.home .home-container .texts p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1e1e1e;
+  margin: 0;
+}
+.home .home-container .texts button {
+  color: #24a4ec;
+  font-family: "Josefin Sans";
+  border-color: #24a4ec !important;
+  margin: 0;
+  max-width: 220px;
+}
+.home .home-container .social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.home .home-container .social .img-holder img {
+  width: 500px;
+}
+.home .home-container .social .icons {
+  display: flex;
+  justify-content: space-around;
+}
+.home .home-container .social .icons img {
+  width: 25px;
+}
+.home .home-container .social p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.335em;
+  color: #1e1e1e;
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .home-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .home-container .texts {
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
+  .home-container .social {
+    flex-direction: row !important;
+  }
+  .home-container .social .img-holder {
+    order: 2;
+  }
+  .home-container .social .img-holder img {
+    width: 270px !important;
+  }
+  .home-container .social .icons {
+    flex-direction: column;
+    order: 1;
+    justify-content: space-around;
+  }
+  .home-container .social p {
+    order: 3;
+    transform: rotate(90deg);
+  }
+  .home {
+    height: calc(100vh + 100px);
+  }
+}/*# sourceMappingURL=Home.css.map */
