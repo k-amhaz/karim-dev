@@ -14,7 +14,9 @@ export default function Header() {
     <div className="header">
       <Container>
         <div className="container">
-          <div className="logo">Karim</div>
+          <Link to={"/"} className="no-underline">
+            <div className="logo">Karim</div>
+          </Link>
           <div
             onClick={toggler}
             className={toggle ? "active drop" : "drop"}
