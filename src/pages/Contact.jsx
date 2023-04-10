@@ -11,11 +11,15 @@ export default function Contact() {
             <h4>Contact</h4>
             <p>Interested in working together?</p>
           </div>
-          <form className="form">
+          <form
+            className="form"
+            action="https://formspree.io/f/xzbqkrol"
+            method="POST"
+          >
             <input
               name="name"
               type="name"
-              class="feedback-input"
+              className="feedback-input"
               required
               placeholder="Name"
               style={{ color: "black" }}
@@ -23,15 +27,15 @@ export default function Contact() {
             <input
               name="email"
               type="email"
-              class="feedback-input"
+              className="feedback-input"
               placeholder="Email"
               required
               style={{ color: "black" }}
             />
             <textarea
               name="text"
-              style={{ color: "black" }}  
-              class="feedback-input"
+              style={{ color: "black" }}
+              className="feedback-input"
               placeholder="Comment"
               required
             ></textarea>

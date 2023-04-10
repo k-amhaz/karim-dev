@@ -65,7 +65,7 @@ export default function Header() {
               </Link>
             </ul>
           </nav>
-          <a href="https://wa.me/96176653295" className="no-underline">
+          <a href="https://wa.me/96176653295" className="no-underline call-btn">
             <Button className="call-btn" variant="outlined">
               Call me
             </Button>

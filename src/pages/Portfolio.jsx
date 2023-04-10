@@ -17,7 +17,9 @@ export default function Portfolio() {
           <div className="projects">
             <a href="https://ko-commerce.netlify.app/" className="no-underline">
               <div className="card">
-                <div className="img"></div>
+                <div className="img">
+                  <img src="/e-commerce.png" alt="E-commerce" />
+                </div>
                 <h6>E-commerce project</h6>
               </div>
             </a>
@@ -26,7 +28,9 @@ export default function Portfolio() {
               className="no-underline"
             >
               <div className="card">
-                <div className="img"></div>
+                <div className="img">
+                  <img src="api.png" alt="Api project" />
+                </div>
                 <h6>API project</h6>
               </div>
             </a>
@@ -35,7 +39,9 @@ export default function Portfolio() {
               className="no-underline"
             >
               <div className="card">
-                <div className="img"></div>
+                <div className="img">
+                  <img src="/tourism.png" alt="Tourism website" />
+                </div>
                 <h6>Tourism website</h6>
               </div>
             </a>
@@ -44,7 +50,9 @@ export default function Portfolio() {
               className="no-underline"
             >
               <div className="card">
-                <div className="img"></div>
+                <div className="img">
+                  <img src="/momory-cards.jpg" alt="Memory cards game" />
+                </div>
                 <h6>Memory cards game</h6>
               </div>
             </a>

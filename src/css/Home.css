@@ -82,6 +82,7 @@
 }
 .home .home-container .social .img-holder img {
   width: 500px;
+  border-radius: 10px;
 }
 .home .home-container .social .icons {
   display: flex;
